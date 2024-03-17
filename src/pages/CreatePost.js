@@ -35,7 +35,7 @@ export default function CreatePost() {
     data.append("file",files[0]);
     ev.preventDefault();
     
-    const response = await fetch('https://blogsitebackend-wtry.onrender.com/post', {
+    const response = await fetch('https://blogsitebackend-2moy.onrender.com/post', {
       method:'POST',
       body: data, 
       credentials:'include',

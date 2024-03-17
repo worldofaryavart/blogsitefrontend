@@ -11,7 +11,7 @@ export default function EditPost() {
   const [redirect,setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch('https://blogsitebackend-wtry.onrender.com/post/'+id)
+    fetch('https://blogsitebackend-2moy.onrender.com/post/'+id)
       .then(response => {
         response.json().then(postInfo => {
           setTitle(postInfo.title);
@@ -32,7 +32,7 @@ export default function EditPost() {
       data.append('file', files?.[0]);
     }
     
-    const response = await fetch('https://blogsitebackend-wtry.onrender.com/post', {
+    const response = await fetch('https://blogsitebackend-2moy.onrender.com/post', {
       method: 'PUT',
       body: data,
       credentials: 'include',

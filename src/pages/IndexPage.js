@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 export default function IndexPage() {
   const [posts,setPosts] = useState([]);
   useEffect(() => {
-    fetch('https://blogsitebackend-wtry.onrender.com/post').then(response => {
+    fetch('https://blogsitebackend-2moy.onrender.com/post').then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
